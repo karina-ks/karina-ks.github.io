@@ -1,0 +1,855 @@
+```html
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Karina Kimani-Stewart | Astronomy</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <!-- Small amount of CSS for the photo carousel -->
+    <style>
+
+        .photo-carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-carousel .carousel-slide {
+            display: none;
+        }
+
+        .photo-carousel .carousel-slide.active {
+            display: block;
+            animation: fadeIn 1s ease;
+        }
+
+        .photo-carousel img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .carousel-dots {
+            text-align: center;
+            margin-top: 0.75em;
+        }
+
+        .carousel-dots button {
+            border: none;
+            background: #cccccc;
+            width: 0.6em;
+            height: 0.6em;
+            border-radius: 50%;
+            margin: 0 0.25em;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .carousel-dots button.active {
+            background: #8f6fa8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0.25;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body class="is-preload">
+
+
+<!-- =====================================================
+     WRAPPER
+===================================================== -->
+
+<div id="wrapper">
+
+
+    <!-- =================================================
+         HEADER
+    ================================================== -->
+
+    <header id="header" class="alt">
+
+        <span class="logo">
+            <span class="icon solid fa-star"></span>
+        </span>
+
+        <h1>Karina Kimani-Stewart</h1>
+
+        <p>
+            Astronomy Graduate Student<br />
+            Georgia State University
+        </p>
+
+    </header>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav id="nav">
+
+        <ul>
+
+            <li>
+                <a href="#introduction" class="active">
+                    About Me
+                </a>
+            </li>
+
+            <li>
+                <a href="#research">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="#cv">
+                    CV
+                </a>
+            </li>
+
+            <li>
+                <a href="#presentations">
+                    Presentations
+                </a>
+            </li>
+
+            <li>
+                <a href="#lingocatalog">
+                    Lingo Catalog
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         MAIN
+    ================================================== -->
+
+    <div id="main">
+
+
+
+        <!-- =================================================
+             ABOUT ME
+        ================================================== -->
+
+        <section id="introduction" class="main">
+
+            <div class="spotlight">
+
+
+                <!-- Text -->
+
+                <div class="content">
+
+                    <header class="major">
+
+                        <h2>Hi, I'm Karina!</h2>
+
+                    </header>
+
+
+                    <p>
+                        I'm an astronomy PhD student at Georgia State
+                        University interested in the stars, planets, and
+                        planetary systems that make up our Galaxy.
+                    </p>
+
+
+                    <p>
+                        My research focuses on
+                        <strong>exoplanets around M dwarfs, stellar
+                        rotation, and stellar activity.</strong>
+                        I'm particularly interested in understanding
+                        what the outer architecture of M-dwarf planetary
+                        systems looks like — and whether the planets we
+                        have found so far are actually representative of
+                        the systems that exist.
+                    </p>
+
+
+                    <p>
+                        A big part of my work is thinking about
+                        <strong>observational bias</strong>: sometimes
+                        "we haven't found it" and "it isn't there" are
+                        two very different statements.
+                    </p>
+
+
+                    <p>
+                        Outside of research, I enjoy finding ways to make
+                        astronomy a little less intimidating and a lot
+                        more fun to talk about.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PHOTO CAROUSEL
+                ================================================== -->
+
+                <div class="photo-carousel" id="photo-carousel">
+
+
+                    <div class="carousel-slide active">
+
+                        <img
+                            src="images/pic01.jpg"
+                            alt="Astronomy photograph"
+                        />
+
+                    </div>
+
+
+                    <div class="carousel-slide">
+
+                        <img
+                            src="images/pic02.jpg"
+                            alt="Astronomy photograph"
+                        />
+
+                    </div>
+
+
+                    <div class="carousel-slide">
+
+                        <img
+                            src="images/pic03.jpg"
+                            alt="Astronomy photograph"
+                        />
+
+                    </div>
+
+
+                    <div class="carousel-slide">
+
+                        <img
+                            src="images/pic04.jpg"
+                            alt="Astronomy photograph"
+                        />
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Carousel controls -->
+
+            <div class="carousel-dots">
+
+                <button
+                    class="active"
+                    onclick="showPhoto(0)"
+                    aria-label="Photo 1">
+                </button>
+
+                <button
+                    onclick="showPhoto(1)"
+                    aria-label="Photo 2">
+                </button>
+
+                <button
+                    onclick="showPhoto(2)"
+                    aria-label="Photo 3">
+                </button>
+
+                <button
+                    onclick="showPhoto(3)"
+                    aria-label="Photo 4">
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESEARCH
+        ================================================== -->
+
+        <section id="research" class="main special">
+
+
+            <header class="major">
+
+                <h2>Research</h2>
+
+                <p>
+                    I'm interested in the planets we find, the planets
+                    we don't find, and the reasons those two things
+                    might not be the same.
+                </p>
+
+            </header>
+
+
+
+            <!-- Research topics -->
+
+            <ul class="features">
+
+
+                <li>
+
+                    <span class="icon solid major style1 fa-globe"></span>
+
+                    <h3>Exoplanets &amp; M Dwarfs</h3>
+
+                    <p>
+                        M dwarfs are the most common stars in the Galaxy,
+                        but the planetary systems we have discovered
+                        around them appear to be dominated by planets
+                        on relatively short orbits. I want to understand
+                        what the outer architecture of these systems
+                        really looks like.
+                    </p>
+
+                </li>
+
+
+
+                <li>
+
+                    <span class="icon solid major style3 fa-sync-alt"></span>
+
+                    <h3>Stellar Rotation</h3>
+
+                    <p>
+                        I study stellar rotation in M dwarfs and use
+                        photometric observations to investigate how
+                        these stars rotate and evolve. Rotation also
+                        provides an important window into stellar
+                        magnetic activity.
+                    </p>
+
+                </li>
+
+
+
+                <li>
+
+                    <span class="icon solid major style5 fa-search"></span>
+
+                    <h3>Observational Bias</h3>
+
+                    <p>
+                        Planet searches are not equally sensitive to
+                        every kind of planetary system. Stellar activity
+                        can make planets harder to detect, so I'm
+                        interested in finding ways to look for systems
+                        that traditional searches may overlook.
+                    </p>
+
+                </li>
+
+
+            </ul>
+
+
+
+            <p class="content">
+
+                One question that keeps coming back in my work is:
+
+                <br /><br />
+
+                <strong>
+                    Are there truly no planets around the fastest
+                    rotators?
+                </strong>
+
+                <br /><br />
+
+                Or are those systems simply harder for us to find?
+
+                <br /><br />
+
+                Answering that distinction is important if we want
+                exoplanet demographics to tell us about the planets
+                that actually exist — rather than only the planets
+                that happen to be easiest to detect.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CV
+        ================================================== -->
+
+        <section id="cv" class="main special">
+
+
+            <header class="major">
+
+                <h2>Curriculum Vitae</h2>
+
+                <p>
+                    My education, research, publications,
+                    presentations, teaching, and service.
+                </p>
+
+            </header>
+
+
+            <footer class="major">
+
+                <ul class="actions special">
+
+                    <li>
+
+                        <a
+                            href="CV.pdf"
+                            class="button primary"
+                            target="_blank">
+
+                            View My CV
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </footer>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRESENTATIONS
+        ================================================== -->
+
+        <section id="presentations" class="main special">
+
+
+            <header class="major">
+
+                <h2>Presentations</h2>
+
+                <p>
+                    Talks, posters, and other opportunities to
+                    share my research.
+                </p>
+
+            </header>
+
+
+
+            <ul class="statistics">
+
+
+                <li class="style1">
+
+                    <span class="icon solid fa-microphone"></span>
+
+                    <strong>Talks</strong>
+
+                    Research talks and seminars
+
+                </li>
+
+
+
+                <li class="style2">
+
+                    <span class="icon solid fa-image"></span>
+
+                    <strong>Posters</strong>
+
+                    Conferences and meetings
+
+                </li>
+
+
+
+                <li class="style3">
+
+                    <span class="icon solid fa-chalkboard-teacher"></span>
+
+                    <strong>Teaching</strong>
+
+                    Astronomy and physics
+
+                </li>
+
+
+
+                <li class="style4">
+
+                    <span class="icon solid fa-users"></span>
+
+                    <strong>Outreach</strong>
+
+                    Sharing astronomy
+
+                </li>
+
+
+            </ul>
+
+
+
+            <p class="content">
+
+                <strong>Presentation archive coming soon.</strong>
+
+                <br /><br />
+
+                This section will eventually include conference talks,
+                posters, invited presentations, and other places where
+                I've gotten to share my work.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             LINGO CATALOG
+        ================================================== -->
+
+        <section id="lingocatalog" class="main special">
+
+
+            <header class="major">
+
+                <h2>Lingo Catalog</h2>
+
+                <p>
+                    Because astronomy has approximately twelve
+                    thousand words that sound much more complicated
+                    than they need to be.
+                </p>
+
+            </header>
+
+
+
+            <p class="content">
+
+                Astronomy comes with its own language, and sometimes
+                the hardest part of learning a new concept is figuring
+                out what everyone is actually talking about.
+
+                <br /><br />
+
+                The Lingo Catalog is my collection of astronomy terms,
+                concepts, and explanations — especially the ones that
+                make much more sense when someone explains them like
+                a normal human being.
+
+            </p>
+
+
+
+            <footer class="major">
+
+                <ul class="actions special">
+
+                    <li>
+
+                        <a
+                            href="#"
+                            class="button">
+
+                            Coming Soon
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </footer>
+
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer id="footer">
+
+
+        <section>
+
+            <h2>Let's talk astronomy.</h2>
+
+
+            <p>
+
+                I'm always happy to talk about exoplanets,
+                M dwarfs, stellar rotation, observing strategies,
+                astronomy education, or the weird things stars do.
+
+            </p>
+
+
+            <ul class="actions">
+
+                <li>
+
+                    <a
+                        href="mailto:YOUR_EMAIL@gsu.edu"
+                        class="button">
+
+                        Email Me
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Find Me</h2>
+
+
+            <dl class="alt">
+
+
+                <dt>Department</dt>
+
+                <dd>
+                    Physics &amp; Astronomy
+                </dd>
+
+
+
+                <dt>University</dt>
+
+                <dd>
+                    Georgia State University
+                </dd>
+
+
+
+                <dt>Email</dt>
+
+                <dd>
+
+                    <a href="mailto:YOUR_EMAIL@gsu.edu">
+
+                        YOUR_EMAIL@gsu.edu
+
+                    </a>
+
+                </dd>
+
+
+            </dl>
+
+
+
+            <ul class="icons">
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        class="icon brands fa-github alt">
+
+                        <span class="label">
+                            GitHub
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        class="icon brands fa-orcid alt">
+
+                        <span class="label">
+                            ORCID
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        class="icon brands fa-google alt">
+
+                        <span class="label">
+                            Google Scholar
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </section>
+
+
+
+        <p class="copyright">
+
+            &copy; 2026 Karina Kimani-Stewart.
+
+            Design based on
+            <a href="https://html5up.net">
+                HTML5 UP
+            </a>.
+
+        </p>
+
+
+    </footer>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     ORIGINAL STELLAR SCRIPTS
+===================================================== -->
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/jquery.scrollex.min.js"></script>
+
+<script src="assets/js/jquery.scrolly.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+
+<!-- =====================================================
+     PHOTO CAROUSEL SCRIPT
+===================================================== -->
+
+<script>
+
+    let currentPhoto = 0;
+
+    const photos =
+        document.querySelectorAll(".carousel-slide");
+
+    const dots =
+        document.querySelectorAll(".carousel-dots button");
+
+
+    function showPhoto(index) {
+
+        currentPhoto = index;
+
+
+        photos.forEach((photo, i) => {
+
+            photo.classList.toggle(
+                "active",
+                i === currentPhoto
+            );
+
+        });
+
+
+        dots.forEach((dot, i) => {
+
+            dot.classList.toggle(
+                "active",
+                i === currentPhoto
+            );
+
+        });
+
+    }
+
+
+    /*
+     * Automatically move to the next photograph
+     * every five seconds.
+     */
+
+    setInterval(() => {
+
+        currentPhoto =
+            (currentPhoto + 1) % photos.length;
+
+        showPhoto(currentPhoto);
+
+    }, 5000);
+
+</script>
+
+
+</body>
+
+</html>
+```
